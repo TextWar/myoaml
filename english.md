@@ -1,4 +1,5 @@
 [![en](https://img.shields.io/badge/readme-chinese-orange.svg)](README.md)
+![LICENSE](https://img.shields.io/badge/license-GPL-blue.svg)
 # oaml
 Object aim markup language
 
