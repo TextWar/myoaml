@@ -1,0 +1,11 @@
+root:{
+  child1: helloworld
+  child2: hello
+  {
+    grandchild3: [0,0,0,0]
+    grandchild4: [
+                  (name:tom;age:13),
+                  (name:mike;age:14)
+                 ]
+  }
+}
