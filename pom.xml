@@ -1,0 +1,17 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.noyark</groupId>
+  <artifactId>oaml</artifactId>
+  <version>0.0.1</version>
+  <name>oaml parser</name>
+  <url>www.noyark.net</url>
+  <description>the oaml config parser for java</description>
+  <organization>
+  	<name>Noyark</name>
+  	<url>www.noyark.net</url>
+  </organization>
+  <issueManagement>
+  	<system>github</system>
+  	<url>www.github.com/magiclu550/oaml</url>
+  </issueManagement>
+</project>
