@@ -3,6 +3,8 @@
 # oaml
 Object aim markup language
 
+> This software is protected by the GPL software agreement. Please read the relevant license before using this software.
+
 * What is oaml
 Oaml full name object set target extension language, with a simple configuration mode and parsing mode, can be indented without restrictions, currently version 0.0.2 beta
 * How to use it?
