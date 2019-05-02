@@ -215,3 +215,5 @@ Java method: getDate(format)
 3. *n points to the anchor
 4. {} Grade the nodes
 5. [] Divide an array
+6. $ var
+7. () object

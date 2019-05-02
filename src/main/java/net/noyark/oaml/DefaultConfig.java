@@ -314,7 +314,7 @@ public class DefaultConfig implements OamlConfig{
 	 * good time format ,so that the parser looks
 	 * for aqualified value
 	 * @param key the node path
-	 * @param format the date format 
+	 * @param dateformat the date format
 	 * @return the date object(java.util.Date)
 	 * @throws ParseException Signals that an error has 
 	 * 					been reached unexpectedly while parsing.
@@ -504,7 +504,7 @@ public class DefaultConfig implements OamlConfig{
 	 * the comment information starting with # will be written at
 	 * the corresponding node,but will not be retained during parsing.
 	 *
-	 * @param the node path that is added this note
+	 * @param key the node path that is added this note
 	 * @param note the note message
 	 */
 	
@@ -627,7 +627,7 @@ Note that it is generally necessary to override the hashCode method whenever thi
 	/**
 	 * This method can get the node of the first
 	 * path of the node.
-	 * @param path the node path
+	 * @param key the node path
 	 * @return the first child node of this name
 	 */
 	

@@ -151,17 +151,12 @@ public class XEntry implements Node{
 			return trueValue;
 		}
 	}
-	
+
 	/**
-	 * <P>To create a subtree node under the node ,you can 
-	 * create multiple nodes with the same name,but the
-	 * serial number of the node with the same name is
-	 * different.
-	 * <P>After obtaining the child node later,you
-	 * need to obtain the node set or get the first node 
-	 * through the node name
-	 * @param name the new node's name
-	 * @return this node
+	 * This method can get a Array's value that is this index,just get
+	 * the String type
+	 * @param index the array index
+	 * @return the value
 	 */
 	
 	@Override
@@ -806,7 +801,8 @@ public class XEntry implements Node{
 	 * object of the type can be returned.
 	 * <P>If the object does not exist or is not an object
 	 * type,an exception is thrown.
-	 * @param type the object's type,if the object is Test 
+	 * @param value the oaml object value,such as (a:b;c:f;f:a;o:p)
+	 * @param objType the object's type,if the object is Test
 	 * 				type,you can use 'Test.class' object
 	 * @return the java object compiled from oaml
 	 * @throws InstantiationException it will throw exception
@@ -814,7 +810,7 @@ public class XEntry implements Node{
 	 */
 	
 	@SuppressWarnings("unchecked")
-	private <T> T getObject(String value,Class<T> objType) throws IllegalArgumentException, InstantiationException {
+	public <T> T getObject(String value,Class<T> objType) throws IllegalArgumentException, InstantiationException {
 		if(value.equals("null")) {
 			return null;
 		}

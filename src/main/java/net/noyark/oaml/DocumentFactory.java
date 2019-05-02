@@ -70,4 +70,33 @@ public final class DocumentFactory {
 			return document.replace("\\n","\\\\n");
 		}
 	}
+
+	/**
+	 * You can modify the variable specified in the value to the value you
+	 * need. The variable declaration format: $ variable name, in the process
+	 * of processing, the parameter is passed by value mapping,
+	 * new ValueMapping ("variable name", "value") variable name is not Need
+	 * to be prefixed with $, you can modify multiple variables at the same time,
+	 * do not support special objects, you can get string modification with get,
+	 * and then convert to object by a method of getObject
+	 * @param result The result set at the beginning is generally obtained by the get method.
+	 * 				 Such as the config.get method
+	 *   			Entry.get method
+	 * @param mappings the mapping values
+	 * @return the value that is changed
+	 */
+
+	public static String setVar(String result,ValueMapping... mappings){
+
+		StringBuilder builder = new StringBuilder(result.toString());
+		for(int i = 0;i<mappings.length;i++){
+			String before = "$"+mappings[i].getBefore();//before value
+			String after = mappings[i].getAfter();//after value
+			if(builder.indexOf(before)==-1){
+				return builder.toString();
+			}
+			builder.replace(builder.indexOf(before),before.length(),after);
+		}
+		return builder.toString();
+	}
 }

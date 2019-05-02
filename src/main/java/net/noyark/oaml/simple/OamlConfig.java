@@ -24,6 +24,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+import net.noyark.oaml.ValueMapping;
 import net.noyark.oaml.tree.Document;
  /**
   * This configuration file class simplifies the
@@ -319,7 +320,7 @@ public interface OamlConfig {
 	 * the comment information starting with # will be written at
 	 * the corresponding node,but will not be retained during parsing.
 	 *
-	 * @param the node path that is added this note
+	 * @param key the node path that is added this note
 	 * @param note the note message
 	 */
 	
